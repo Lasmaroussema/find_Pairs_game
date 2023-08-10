@@ -1,0 +1,48 @@
+body
+{
+    margin: 0;
+    background-color: black;
+}
+.container
+{
+    margin: 15px auto;
+    width: 200px;
+    perspective: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.box
+{
+    width: 140px;
+    height: 135px;
+    position:relative;
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.box .face
+{
+ position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    backface-visibility: hidden;
+   
+}
+.box .front
+{
+    background-color: rgb(43, 118, 222);
+   
+}
+.box .back
+{
+    background-color: rgb(11, 89, 22);
+  transform: rotateY(180deg);
+}
+
